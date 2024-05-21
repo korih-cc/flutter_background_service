@@ -3,7 +3,7 @@ package id.flutter.flutter_background_service;
 import static android.os.Build.VERSION.SDK_INT;
 
 import android.annotation.SuppressLint;
-import android.app.AlarmManager;
+// import android.app.AlarmManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
