@@ -169,7 +169,7 @@ public class BackgroundService extends Service implements MethodChannel.MethodCa
                     .setContentIntent(pi);
 
             try {
-                ServiceCompat.startForeground(this, notificationId, mBuilder.build(), ServiceInfo.FOREGROUND_SERVICE_TYPE_MANIFEST);
+                ServiceCompat.startForeground(this, notificationId, mBuilder.build(), FOREGROUND_SERVICE_TYPE_LOCATION);
             } catch (SecurityException e) {
               Log.w(TAG, "Failed to start foreground service due to SecurityException - have you forgotten to request a permission? - " + e.getMessage());
             }
